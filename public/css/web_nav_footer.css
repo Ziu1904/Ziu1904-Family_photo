@@ -1,0 +1,121 @@
+/* ================= ROOT ================= */
+:root {
+    --fm-ink: #17212b;
+    --fm-muted: #667085;
+    --fm-line: #e7ebf0;
+    --fm-soft: #f6f8fb;
+    --fm-brand: #1f7a8c;
+    --fm-brand-dark: #155e6d;
+    --fm-warm: #f2a65a;
+    --fm-coral: #e76f51;
+}
+
+/* ================= NAVBAR ================= */
+.site-navbar {
+    background: rgba(255, 255, 255, 0.96);
+    border-bottom: 1px solid rgba(231, 235, 240, 0.9);
+    box-shadow: 0 8px 26px rgba(23, 33, 43, 0.06);
+    backdrop-filter: blur(12px);
+    padding: 12px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* NAVBAR LOGO */
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    overflow: hidden;
+    font-size: 1.2rem;
+    font-weight: 800;
+}
+
+.navbar-brand img,
+.site-navbar .navbar-brand img {
+    width: 36px;
+    height: 36px;
+    object-fit: contain;
+    display: block;
+}
+
+.brand-text {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.1;
+}
+
+.brand-text span {
+    color: var(--fm-brand);
+    font-size: 0.78rem;
+    font-weight: 600;
+}
+
+/* NAV LINKS */
+.site-navbar .nav-link {
+    color: var(--fm-ink) !important;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    margin: 0 4px;
+    padding: 10px 12px !important;
+    transition: 0.2s;
+}
+
+.site-navbar .nav-link:hover,
+.site-navbar .nav-link.active {
+    background: rgba(31, 122, 140, 0.09);
+    color: var(--fm-brand-dark) !important;
+}
+
+/* CTA BUTTON */
+.nav-cta {
+    background: var(--fm-coral) !important;
+    color: #fff !important;
+}
+
+.nav-cta:hover {
+    background: #d85f43 !important;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+
+    .brand-text {
+        display: none;
+    }
+
+    .navbar-brand img {
+        width: 32px;
+        height: 32px;
+    }
+}
+
+/* ================= FOOTER ================= */
+.site-footer {
+    background-color: #333;
+    color: #fff;
+    padding: 60px 0 30px;
+}
+
+.footer-logo-img {
+    width: 36px;
+    height: 36px;
+    object-fit: contain;
+    display: block;
+}
+
+.footer-divider {
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 40px 0 20px;
+}
+
+.opacity-75 {
+    opacity: 0.75;
+}
+
+.hover-opacity-100:hover {
+    opacity: 1 !important;
+    transition: 0.3s;
+}

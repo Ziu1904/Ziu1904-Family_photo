@@ -1,0 +1,214 @@
+/* Admin panel styles */
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f8f9fa;
+}
+
+.sidebar {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    position: fixed;
+    width: 250px;
+    left: 0;
+    top: 0;
+    color: white;
+    padding-top: 20px;
+    z-index: 1000;
+}
+
+.sidebar-header {
+    padding: 0 20px;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.sidebar-header img {
+    height: 35px;
+    width: auto;
+    filter: brightness(0) invert(1);
+}
+
+.sidebar-header .sidebar-title {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.sidebar .nav-link {
+    color: rgba(255, 255, 255, 0.8);
+    padding: 15px 20px;
+    border-left: 4px solid transparent;
+    transition: all 0.3s;
+}
+
+.sidebar .nav-link:hover,
+.sidebar .nav-link.active {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-left-color: #fff;
+    color: white;
+}
+
+.sidebar .nav-link i {
+    margin-right: 10px;
+    width: 20px;
+}
+
+.main-content {
+    margin-left: 250px;
+    padding: 30px;
+}
+
+.navbar-admin {
+    background: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 15px 30px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+}
+
+.navbar-admin h1 {
+    color: #333;
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.navbar-admin .navbar-user {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.navbar-admin .user-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 600;
+}
+
+.card-stat {
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    border-left: 4px solid #667eea;
+}
+
+.card-stat h5 {
+    color: #999;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.card-stat .value {
+    font-size: 32px;
+    font-weight: 700;
+    color: #333;
+}
+
+.table-admin {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.table-admin thead {
+    background-color: #f8f9fa;
+    border-bottom: 2px solid #e9ecef;
+}
+
+.table-admin th {
+    font-weight: 600;
+    color: #667eea;
+    padding: 15px;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+.table-admin td {
+    padding: 15px;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.badge-status {
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.badge-pending { background-color: #ffc107; color: #333; }
+.badge-confirmed { background-color: #17a2b8; color: white; }
+.badge-completed { background-color: #28a745; color: white; }
+.badge-cancelled { background-color: #dc3545; color: white; }
+
+.btn-sm-admin {
+    padding: 6px 12px;
+    font-size: 12px;
+    border-radius: 4px;
+    margin: 2px;
+}
+
+.alert-custom {
+    border-radius: 8px;
+    border: none;
+    padding: 15px 20px;
+}
+
+.btn-primary-admin {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border: none;
+    border-radius: 6px;
+    padding: 10px 20px;
+    color: white;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+.btn-primary-admin:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+    color: white;
+}
+
+.form-control-admin {
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    padding: 10px 15px;
+}
+
+.form-control-admin:focus {
+    border-color: #667eea;
+    box-shadow: 0 0 0 0.2rem rgba(102, 126, 234, 0.25);
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        position: relative;
+        min-height: auto;
+    }
+
+    .main-content {
+        margin-left: 0;
+    }
+
+    .sidebar .nav-link {
+        display: inline-block;
+        width: auto;
+    }
+}

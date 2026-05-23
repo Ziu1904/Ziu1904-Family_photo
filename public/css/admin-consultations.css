@@ -1,0 +1,19 @@
+.badge-pending {
+    background-color: #FFC107;
+    color: #000;
+}
+
+.badge-in-progress {
+    background-color: #0D6EFD;
+    color: #fff;
+}
+
+.badge-completed {
+    background-color: #198754;
+    color: #fff;
+}
+
+.badge-rejected {
+    background-color: #DC3545;
+    color: #fff;
+}

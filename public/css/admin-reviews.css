@@ -1,0 +1,195 @@
+/* Admin review page styles */
+.review-panel {
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 20px 45px rgba(102, 126, 234, 0.08);
+    padding: 30px;
+}
+
+.review-section {
+    margin-bottom: 30px;
+}
+
+.review-section h5 {
+    margin-bottom: 24px;
+    font-size: 1.05rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    color: #253858;
+}
+
+.review-field {
+    margin-bottom: 18px;
+}
+
+.review-field label {
+    display: block;
+    font-size: 0.75rem;
+    color: #7a869a;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 8px;
+}
+
+.review-field .review-value {
+    font-size: 0.95rem;
+    color: #2c3e50;
+    line-height: 1.8;
+}
+
+.review-value.badge {
+    font-size: 0.85rem;
+    padding: 8px 12px;
+    border-radius: 999px;
+}
+
+.review-status-card {
+    background: #f8fbff;
+    border-radius: 14px;
+    border: 1px solid rgba(102, 126, 234, 0.12);
+    padding: 22px;
+}
+
+.review-status-card .status-group {
+    margin-bottom: 20px;
+}
+
+.review-status-card .status-group:last-child {
+    margin-bottom: 0;
+}
+
+.review-status-card .status-group label {
+    font-size: 0.7rem;
+    color: #6c7a93;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.review-status-card .status-value {
+    font-size: 0.95rem;
+    color: #1f2937;
+}
+
+.review-images-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 18px;
+}
+
+.review-image-item {
+    border-radius: 14px;
+    overflow: hidden;
+    background: #f1f5ff;
+    position: relative;
+    border: 1px solid rgba(102, 126, 234, 0.12);
+}
+
+.review-image-item img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    display: block;
+}
+
+.review-image-item .image-actions {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.review-image-item .image-actions form {
+    margin: 0;
+}
+
+.review-image-item .image-actions .btn {
+    font-size: 0.75rem;
+    padding: 6px 10px;
+}
+
+.review-card-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: flex-end;
+}
+
+.review-card-actions .btn {
+    min-width: 120px;
+}
+
+@media (max-width: 767px) {
+    .review-panel {
+        padding: 20px;
+    }
+
+    .review-card-actions {
+        justify-content: flex-start;
+    }
+}
+
+.review-table-wrapper .table {
+    border-collapse: separate;
+    border-spacing: 0 0.75rem;
+}
+
+.review-table-wrapper .table thead th {
+    border-bottom: 1px solid rgba(15, 23, 42, 0.08);
+    color: #4b5563;
+    font-size: 0.85rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    padding: 16px 18px;
+    background: transparent;
+}
+
+.review-table-wrapper .table tbody tr {
+    background: #fff;
+    border: 1px solid rgba(15, 23, 42, 0.08);
+    border-radius: 14px;
+}
+
+.review-table-wrapper .table tbody td {
+    vertical-align: middle;
+    padding: 16px 18px;
+}
+
+.review-table-wrapper .text-center {
+    text-align: center !important;
+}
+
+.badge-info {
+    background: #17a2b8;
+    color: white;
+}
+
+.badge-warning {
+    background: #ffc107;
+    color: #333;
+}
+
+.btn-sm-admin {
+    margin-right: 6px;
+    margin-bottom: 6px;
+}
+
+.admin-package-panel {
+    padding: 30px;
+}
+
+.admin-package-panel .review-field {
+    margin-bottom: 24px;
+}
+
+.admin-package-panel .review-field .review-value {
+    background: #f8fafc;
+    padding: 18px;
+    border-radius: 12px;
+}
+
+.admin-package-panel h5 {
+    font-size: 1.2rem;
+    margin-bottom: 28px;
+}
+
